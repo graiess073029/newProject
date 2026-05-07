@@ -1,0 +1,4 @@
+- [x] Update modes.json with CPU min/max and GPU clock commands for each mode
+- [x] Add event listeners in assets/index.js for mode buttons to execute commands
+- [x] Modify index.js to request admin privileges for GPU controls
+- [x] Test the changes

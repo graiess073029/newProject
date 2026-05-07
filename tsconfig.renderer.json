@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",            // renderer doit être ESM
+    "outDir": "dist/renderer",
+    "rootDir": "renderer",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": false,
+    "noEmitOnError": true,
+    "lib": ["ES2020", "DOM"]
+  },
+  "include": [
+    "renderer/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
