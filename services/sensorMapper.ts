@@ -129,6 +129,11 @@ Always pick the most representative single sensor for each slot:
 - For VRAM: the currently allocated amount and the total available capacity
 - For iGPU: sensors from the integrated graphics unit that shares system memory, not the dedicated GPU
 
+Never map sensors across hardware groups.
+CPU sensors must come from CPU-related groups.
+GPU sensors must come from GPU-related groups.
+Battery sensors must come from battery-related groups.
+
 CRITICAL: The index field in each candidate is the exact number you must use.
 Do not count positions in this list — read the index field directly from each candidate object.
 Example: if a candidate shows "index": 48, you must output 48, not the position of that item in the list.
