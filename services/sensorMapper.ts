@@ -55,7 +55,6 @@ export interface TelemetryMap {
   iGpu: {
     usage: number | null;
     clock: number | null;
-    vramDynamic: number | null;
   };
   memory: {
     usage: number | null;
@@ -221,8 +220,7 @@ Every numeric value is a candidate index, never a measured value.
   },
   "iGpu": {
     "usage": <index of the sensor measuring integrated GPU utilization percentage>,
-    "clock": <index of the sensor measuring integrated GPU clock frequency>,
-    "vramDynamic": <index of the sensor measuring integrated GPU dynamic memory usage in MB>
+    "clock": <index of the sensor measuring integrated GPU clock frequency>
   },
   "memory": {
     "usage": <index of the sensor measuring currently used physical system RAM in MB>,
